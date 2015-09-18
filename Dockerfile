@@ -54,10 +54,11 @@ RUN mkdir -p ~/.vim/autoload ~/.vim/bundle && \
     git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
 RUN cd ~/.vim/bundle/YouCompleteMe && git submodule update --init --recursive && ./install.sh
-#RUN curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | /bin/zsh
+RUN curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | /bin/zsh || true
 
 ADD vimrc /root/.vimrc
 ADD tmuxinator /root/.tmuxinator
+ADD tmux.conf /etc/tmux.conf
 
 VOLUME ["/go/src"]
 
