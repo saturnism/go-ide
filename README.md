@@ -16,6 +16,8 @@ Mount a volume so you don't lose your work:
 
     $ docker run -v /some/path:/go/src -ti saturnism/go-ide
 
+Or, mount a volume from a named container.
+
 Building the Container
 ----------------------
 Nothing special if you already have Docker installed:
