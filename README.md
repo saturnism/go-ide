@@ -22,7 +22,7 @@ Building the Container
 ----------------------
 Nothing special if you already have Docker installed:
 
-    $ git clone https://github.com/saturnism/go-ide-container
-    $ cd go-ide-container
-    $ docker build -t go-ide-container .
+    $ git clone https://github.com/saturnism/go-ide
+    $ cd go-ide
+    $ docker build -t go-ide .
 
